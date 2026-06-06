@@ -38,22 +38,22 @@ print("After swapping, num1 =", num1, "and num2 =", num2)
 
 #Student Report Program
 student_details = {
-    "Name" : input("Enter your name: "),
-    "Roll_no" : input("Enter your roll number: ")
+    "name" : input("Enter your name: "),
+    "roll_no" : input("Enter your roll number: ")
 }
 
 #Taking input marks from the student
-Science = int(input("Enter science marks: "))
-Maths = int(input("Enter maths marks: "))
-English = int(input("Enter english marks: "))
+science = int(input("Enter science marks: "))
+maths = int(input("Enter maths marks: "))
+english = int(input("Enter english marks: "))
 
 # Calculating total and percentage
-total = Science + Maths + English
-percentage = total / 3
+total = science + maths + english
+percentage = (total / 300) * 100
 
 # Displaying report
 print("\n----- STUDENT REPORT -----")
-print("Name:", student_details["Name"])
-print("Roll Number:", student_details["Roll_no"])
+print("Name:", student_details["name"])
+print("Roll Number:", student_details["roll_no"])
 print("Total Marks:", total)
 print("Percentage:", percentage, "%")
